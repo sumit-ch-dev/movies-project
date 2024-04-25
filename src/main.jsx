@@ -8,6 +8,7 @@ import './index.css'
 import Root from './routes/root.jsx'
 import Profile from './routes/profile.jsx'
 import Register from './routes/register.jsx'
+import Movies from './routes/movies.jsx'
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
     element: <Root />,
     errorElement: <div>404 Not Found</div>,
     children: [
+      {
+        path: '/',
+        element: <Movies />
+      },
       {
         path: '/register',
         element: <Register />

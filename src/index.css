@@ -4,6 +4,11 @@
   margin: 0;
 }
 
+.root {
+  display: flex;
+  flex-direction: column;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -24,4 +29,44 @@
     justify-content: space-between;
     width: 20%;
   }
+}
+
+.register {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+    input {
+      margin: 10px;
+      padding: 10px;
+      width: 300px;
+    }
+
+    button {
+      margin: 10px;
+      padding: 10px;
+      width: 200px;
+      background-color: #333;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
+
+.btn-primary {
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  margin: 10px;
 }

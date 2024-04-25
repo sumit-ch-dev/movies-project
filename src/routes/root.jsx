@@ -3,7 +3,7 @@ import { Outlet, Link } from "react-router-dom"
 export default function Root() {
     return (
         <>
-            <div>
+            <div className="root">
                 <ul className="nav">
                     <div>
                         <li><Link to="/">Home</Link></li>
@@ -13,7 +13,6 @@ export default function Root() {
                         <li><Link to="/profile">Profile</Link></li>
                     </div>
                 </ul>
-
                 <Outlet />
             </div>
         </>
